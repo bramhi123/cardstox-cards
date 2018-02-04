@@ -7,7 +7,7 @@ addons:
     token:
       secure: 38aaf84225be662901619fc11f6bdd6927ab54fa
 script:
-  ./gradlew clean check build
+  ./gradlew clean check sonarqube build
 cache:
   directories:
     $HOME/.m2/repository
