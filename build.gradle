@@ -17,6 +17,7 @@ plugins {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'jacoco'
 
 group = 'com.cardstox'
 version = '0.0.1-SNAPSHOT'
