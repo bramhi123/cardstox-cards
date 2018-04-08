@@ -14,9 +14,5 @@ public class CardsApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CardsApplication.class, args);
 	}
-	
-	@RequestMapping("/")
-	public String hello() {
-		return "Hello World";
-	}
+
 }
