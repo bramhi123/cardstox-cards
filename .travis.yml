@@ -3,9 +3,9 @@ jdk: oraclejdk8
 install: true
 addons:
   sonarcloud:
-    organization: jbelcher-riis-github
+    organization: bramhi123-github
     token:
-      secure: 38aaf84225be662901619fc11f6bdd6927ab54fa
+      secure: f600635f918f0244cc2e9ba3d57d9dad8670ff27
 script:
   ./gradlew clean check jacocoTestReport sonarqube build
 cache:
