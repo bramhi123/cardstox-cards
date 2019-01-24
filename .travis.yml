@@ -1,16 +1,43 @@
 language: java
-jdk: oraclejdk8
+
+sudo: false
+
 install: true
+
+
+
 addons:
+
   sonarcloud:
-    organization: bramhi123-github
+
+    organization: "bramhi123-github"
+
     token:
-      secure: b1ddfbcc72a149e9ef8de2ab1aab91f6f2ca014a
+
+      secure: "b1ddfbcc72a149e9ef8de2ab1aab91f6f2ca014a"
+
+
+
+jdk:
+
+  - oraclejdk8
+
+
+
 script:
-  ./gradlew clean check jacocoTestReport sonarqube build
+
+  - ./gradlew clean check jacocoTestReport sonarqube build
+
+
+
 cache:
+
   directories:
-    $HOME/.m2/repository
-    $HOME/.sonar/cache
-    $HOME/.gradle
-    .gradle
+
+    - '$HOME/.m2/repository'
+
+    - '$HOME/.sonar/cache'
+
+    - '$HOME/.gradle'
+
+    - '.gradle'
